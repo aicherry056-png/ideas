@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人类丰容 - 生活灵感库</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img id="headerEmojiImg" class="header-emoji-img" src="http://biaoqing.gtimg.com/back/yuntu/o/7c859220acc1c85fc8f1449ffbd9efee.jpg" alt="表情包">
+            <div class="theme-selector">
+                <select id="themeSelector">
+                    <option value="default">默认</option>
+                    <option value="pixel">像素风</option>
+                    <option value="neobrutalism">新粗野主义</option>
+                    <option value="terminal">终端风</option>
+                    <option value="memphis">孟菲斯</option>
+                    <option value="liquid-glass">液态玻璃</option>
+                </select>
+            </div>
+            <div class="header-content">
+                <h1>人类丰容</h1>
+                <p>生活灵感库 · 打破无聊日常</p>
+                <div class="header-emoji" id="headerEmoji">🌟</div>
+            </div>
+        </div>
+
+        <div class="mood-section">
+            <div class="mood-title">今天的心情如何？</div>
+            <div class="mood-buttons">
+                <button class="mood-btn" data-mood="energetic">精力充沛</button>
+                <button class="mood-btn" data-mood="calm">平静放松</button>
+                <button class="mood-btn" data-mood="creative">创意满满</button>
+                <button class="mood-btn" data-mood="social">社交活跃</button>
+            </div>
+        </div>
+
+        <div class="dimensions">
+            <div class="dimension-title">选择丰容维度</div>
+            <div class="dimension-tabs">
+                <button class="dimension-tab active" data-dimension="all">全部</button>
+                <button class="dimension-tab" data-dimension="environment">环境</button>
+                <button class="dimension-tab" data-dimension="social">社交</button>
+                <button class="dimension-tab" data-dimension="cognitive">认知</button>
+                <button class="dimension-tab" data-dimension="selfcare">自我关怀</button>
+                <button class="dimension-tab" data-dimension="lifestyle">生活方式</button>
+            </div>
+
+            <div class="cards-container" id="cardsContainer">
+                <!-- 卡片将通过JavaScript动态生成 -->
+            </div>
+        </div>
+
+        <div class="mystery-box" id="mysteryBox">
+            <div class="mystery-title">🎲 神秘盒子</div>
+            <div class="mystery-subtitle">点击获取随机灵感</div>
+        </div>
+    </div>
+
+    <div class="modal" id="cardModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-emoji" id="modalEmoji"></div>
+            <div class="modal-title" id="modalTitle"></div>
+            <div class="modal-description" id="modalDescription"></div>
+            <div class="modal-tags" id="modalTags"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
